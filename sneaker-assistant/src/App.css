@@ -1,0 +1,151 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23000' fill-opacity='0.4'%3E%3Cpath d='M0 0h40v40H0zM40 40h40v40H40z'/%3E%3C/g%3E%3C/svg%3E");
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+}
+
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+  position: relative;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  text-shadow: 2px 2px 8px rgba(0, 128, 0, 0.6);
+  background: -webkit-linear-gradient(left, #4CAF50, #00A862);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button {
+  background-color: #008C4A;
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 3px 4px 10px 2px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+  background: #4CAF50;
+  background: -webkit-linear-gradient(to right, #4CAF50, #00A862);
+  background: linear-gradient(to right, #4CAF50, #00A862);
+}
+
+.button:hover {
+  background-color: #00A862;
+  transform: translateY(-3px);
+}
+
+.input {
+  padding: 20px;
+  font-size: 14px;
+  border: 2px solid #333;
+  background-color: #2D2D2D;
+  color: #FFFFFF;
+  border-radius: 25px;
+  margin: 20px 0;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s;
+}
+
+.input:focus {
+  box-shadow: inset 2px 2px 12px rgba(0, 255, 0, 0.3);
+}
+
+.form-container {
+  margin-bottom: 100px;
+}
+
+.table {
+  width: 60%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: #D4D4D4;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 10px 30px;
+  text-align: left;
+}
+
+th {
+  background-color: #2E2E2E;
+}
+
+tr {
+  background-color: #1F1F1F;
+}
+
+tr:hover {
+  background-color: #2E2E2E;
+}
+
+img {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hint-text {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 20px;
+  animation: floating 2s infinite;
+}
+
+.title {
+  font-size: 4em;
+  font-weight: bold;
+  color: #4CAF50;
+  /* Green color */
+  text-shadow: 0 0 5px #4CAF50, 0 0 10px #4CAF50;
+  /* Reduced glow effect */
+  margin-bottom: 1em;
+  /* Spacing between the title and the content below it */
+}
+
+.rounded-image {
+  max-width: 200%;
+  /* This will ensure that the image doesn't grow beyond its container */
+  height: auto;
+  /* This will ensure that the image height auto-adjusts while maintaining the aspect ratio */
+  border-radius: 10px;
+}
