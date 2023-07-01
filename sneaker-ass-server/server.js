@@ -20,7 +20,7 @@ async function fetchImageFromBing(query) {
         const response = await axios.get('https://api.bing.microsoft.com/v7.0/images/search', {
             params: { q: query },
             headers: {
-                'Ocp-Apim-Subscription-Key': 'REDACTED'
+                'Ocp-Apim-Subscription-Key': 'BING_API_KEY'
             }
         });
 
@@ -55,7 +55,7 @@ app.post('/api/get-sneaker-info', async (req, res) => {
             max_tokens: 1000,
         }, {
             headers: {
-                Authorization: `Bearer REDACTED`, // Replace YOUR_API_KEY with your actual API key
+                Authorization: `Bearer OPENAI_API_KEY`,
             },
         });
 
